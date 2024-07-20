@@ -7,7 +7,14 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        '3xl': '1710px',
+      },
+      colors: {
+        primary: '#050202',
+      },
+    },
   },
   plugins: [require('tailwindcss-multi')],
 };
