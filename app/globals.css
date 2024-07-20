@@ -11,6 +11,10 @@ body {
     text-wrap: balance;
   }
 
+  .text-heading {
+    @apply text-white text-center text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl;
+  }
+
   .bg-linear {
     background: linear-gradient(
       0deg,

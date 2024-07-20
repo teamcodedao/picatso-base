@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 import Hero from './hero';
 import Marquee from './marquee';
+import HowToBuy from './how-to-buy';
 
 import bg0 from './background-0.png';
 import bg1 from './background-1.png';
@@ -31,8 +32,11 @@ export default function Home() {
           placeholder='blur'
           className='object-cover opacity-70'
         />
-        <div className='relative contain-layout'>
-          <Marquee />
+        <div className='relative'>
+          <div className='contain-layout'>
+            <Marquee />
+          </div>
+          <HowToBuy />
         </div>
       </div>
     </>
