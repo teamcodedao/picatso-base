@@ -15,6 +15,10 @@ body {
     @apply text-white text-center text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl;
   }
 
+  .box-shadow {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  }
+
   .bg-linear {
     background: linear-gradient(
       0deg,
