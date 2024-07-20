@@ -1,10 +1,17 @@
 import type {Metadata} from 'next';
-import {Mansalva} from 'next/font/google';
+import {Mansalva, Mali} from 'next/font/google';
 import './globals.css';
+import clsx from 'clsx';
 
 const font = Mansalva({
   weight: ['400'],
   subsets: ['latin'],
+});
+
+const maliFont = Mali({
+  weight: ['200', '300', '400', '500', '600', '700'],
+  subsets: ['latin'],
+  variable: '--mali-font',
 });
 
 export const metadata: Metadata = {
@@ -19,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={font.className}>{children}</body>
+      <body className={clsx(font.className, maliFont.variable)}>
+        {children}
+      </body>
     </html>
   );
 }

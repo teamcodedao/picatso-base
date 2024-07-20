@@ -15,6 +15,9 @@ const config: Config = {
         primary: '#050202',
         secondary: '#DCE632',
       },
+      fontFamily: {
+        mali: 'var(--mali-font)',
+      },
     },
   },
   plugins: [require('tailwindcss-multi')],

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Hero from './hero';
 import Marquee from './marquee';
 import HowToBuy from './how-to-buy';
+import Tokenomics from './tokenomics';
 
 import bg0 from './background-0.png';
 import bg1 from './background-1.png';
@@ -37,6 +38,7 @@ export default function Home() {
             <Marquee />
           </div>
           <HowToBuy />
+          <Tokenomics />
         </div>
       </div>
     </>
